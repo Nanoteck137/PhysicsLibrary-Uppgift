@@ -9,11 +9,11 @@ public enum FluidTable {
     //TODO: Add more fluids
     ;
 
-    double density;
-    double heatCapacity;
-    double meltPoint;
-    double boilPoint;
-    double steamEntalpy;
+    public double density;
+    public double heatCapacity;
+    public double meltPoint;
+    public double boilPoint;
+    public double steamEntalpy;
 
     FluidTable(double d, double hc, double sp, double bp, double se) {
         density = d * 1E3;

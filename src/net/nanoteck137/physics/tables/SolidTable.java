@@ -7,10 +7,10 @@ public enum SolidTable {
     //TODO: Add more solids
     ;
 
-    double density;
-    double heatCapacity;
-    double meltPoint;
-    double meltEntalpy;
+    public double density;
+    public double heatCapacity;
+    public double meltPoint;
+    public double meltEntalpy;
 
     SolidTable(double d, double hc, double sp, double se) {
         density = d * 1E3;

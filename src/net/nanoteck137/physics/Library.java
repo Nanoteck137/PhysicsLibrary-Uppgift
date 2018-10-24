@@ -7,14 +7,15 @@ import net.nanoteck137.physics.tables.SolidTable;
 public class Library {
 
     public static double fahrenheitToCelsius(double fahrenheit) {
-        return 0;
+        return (fahrenheit - 32) / 1.8;
     }
 
     public static double kelvinToCelsius(double kelvin) {
-        return 0;
+        return kelvin - 273.15;
     }
 
     public static double fluidPressure(FluidTable fluid, double deep) {
+        
         return 0;
     }
 

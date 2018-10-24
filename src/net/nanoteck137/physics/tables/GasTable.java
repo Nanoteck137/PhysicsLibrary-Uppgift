@@ -1,10 +1,14 @@
-package net.nanoteck137.physics.util;
+package net.nanoteck137.physics.tables;
 
 public enum GasTable{
 
     AIR(1.29, 1.01),
-    O2(1.43, 0.92),
-    OXYGEN(1.43, 0.92)
+    OXYGEN(1.43, 0.92),
+
+    ARGON(1.78, 0.52),
+    NEON(0.90, 1.03),
+    METHANE(0.72, 2.21),
+
     ;
 
     double density;

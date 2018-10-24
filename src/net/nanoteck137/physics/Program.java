@@ -12,5 +12,7 @@ public class Program {
         System.out.println("kelvinToCelsius(0) -> " + kelvinToCelsius(0));
         System.out.println("fluidPressure(WATER, 10) -> " + fluidPressure(FluidTable.WATER, 10));
         System.out.println("pressureUnderWater(10) -> " + pressureUnderWater(10));
+        System.out.println("kineticEnergy(2, 2) -> " + kineticEnergy(2, 2));
+
     }
 }

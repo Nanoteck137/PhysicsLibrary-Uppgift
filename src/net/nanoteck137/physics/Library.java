@@ -24,7 +24,7 @@ public class Library {
     }
 
     public static double kineticEnergy(double mass, double velocity) {
-        return 0;
+        return 0.5 * mass * Math.pow(velocity, 2);
     }
 
     public static double potentialEnergy(double mass, double height) {

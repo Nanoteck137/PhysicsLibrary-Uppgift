@@ -3,6 +3,7 @@ package net.nanoteck137.physics;
 import net.nanoteck137.physics.tables.FluidTable;
 import net.nanoteck137.physics.tables.GasTable;
 import net.nanoteck137.physics.tables.SolidTable;
+import net.nanoteck137.physics.util.Constants;
 
 public class Library {
 
@@ -14,13 +15,12 @@ public class Library {
         return kelvin - 273.15;
     }
 
-    public static double fluidPressure(FluidTable fluid, double deep) {
-        
-        return 0;
+    public static double fluidPressure(FluidTable fluid, double depth) {
+        return fluid.density * Constants.G * depth;
     }
 
-    public static double pressureUnderWater(double deep) {
-        return 0;
+    public static double pressureUnderWater(double depth) {
+        return fluidPressure(FluidTable.WATER, depth);
     }
 
     public static double kineticEnergy(double mass, double velocity) {

@@ -31,5 +31,8 @@ public class Program {
         System.out.println("svtVelocity(10, 5) -> " + svtVelocity(10, 5));
         System.out.println("svtDistance(10, 5) -> " + svtDistance(10, 5));
         System.out.println("svtTime(10, 2) -> " + svtTime(10, 2));
+
+        System.out.println("work(50, 10) -> " + work(50,10));
+
     }
 }

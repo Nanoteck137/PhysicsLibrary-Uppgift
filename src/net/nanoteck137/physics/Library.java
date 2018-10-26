@@ -143,8 +143,14 @@ public class Library {
         return distance / velocity;
     }
 
+    /**
+     * Calculate the work
+     * @param force The force needed
+     * @param distance The distance
+     * @return Returns the work
+     */
     public static double work(double force, double distance) {
-        return 0;
+        return force * distance;
     }
 
     public static double power(double work, double time) {

@@ -35,7 +35,7 @@ public class Program {
         System.out.println("work(50, 10) -> " + work(50,10));
         System.out.println("power(1000, 2) -> " + power(1000,2));
 
-
+        System.out.println("velocityToHeight(9.82) -> " + velocityToHeight(9.82));
 
     }
 }

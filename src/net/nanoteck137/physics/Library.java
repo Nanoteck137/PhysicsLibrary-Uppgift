@@ -175,8 +175,13 @@ public class Library {
         return 0;
     }
 
+    /**
+     * Calculate the height with velocity
+     * @param velocity The specified velocity
+     * @return The height
+     */
     public static double velocityToHeight(double velocity) {
-        return 0;
+        return Math.pow(velocity, 2.0) / (Constants.G * 2.0);
     }
 
 

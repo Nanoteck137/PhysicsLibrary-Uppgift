@@ -48,7 +48,7 @@ public class Library {
      * Calculate the kinetic energy for a object
      * @param mass The mass of the object
      * @param velocity The velocity of the object
-     * @return Returnes the calculated kinetic energy
+     * @return Returns the calculated kinetic energy
      */
     public static double kineticEnergy(double mass, double velocity) {
         return 0.5 * mass * Math.pow(velocity, 2);
@@ -58,7 +58,7 @@ public class Library {
      * Calculate the potential energy for a object
      * @param mass The mass of the object
      * @param height The height over the ground TODO
-     * @return
+     * @return Returns the potential energy for the object
      */
     public static double potentialEnergy(double mass, double height) {
         return mass * Constants.G * height;
@@ -77,7 +77,7 @@ public class Library {
      * Calulcate the diffrent between 2 values
      * @param first The first value
      * @param last The second value
-     * @return Returns the diffrents
+     * @return Returns the difference
      */
     public static double delta(double first, double last) {
         return last - first;

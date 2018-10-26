@@ -171,7 +171,7 @@ public class Library {
      * @return Returnes the energy necessary to heat up the material to the temperature
      */
     public static double heat(SolidTable solid, double mass, double deltaT) {
-        return solid.heatCapacity * mass * deltaT;
+        return mass * solid.heatCapacity * deltaT;
     }
 
     /**
@@ -182,7 +182,7 @@ public class Library {
      * @return Returns the energy necessary to heat up the material to the temperature
      */
     public static double heat(FluidTable fluid, double volume, double deltaT) {
-        return fluid.heatCapacity * volume * deltaT;
+        return volume * fluid.heatCapacity * deltaT;
     }
 
     /**
@@ -193,7 +193,7 @@ public class Library {
      * @return Returns the energy necessary to heat up the material to the temperature
      */
     public static double heat(GasTable gas, double volume, double deltaT) {
-        return gas.heatCapacity * volume * deltaT;
+        return volume * gas.heatCapacity * deltaT;
     }
 
     /**

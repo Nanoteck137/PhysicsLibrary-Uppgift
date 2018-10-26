@@ -58,44 +58,53 @@ public class Program {
     }
 
     public static void printAssignmentQuestions() {
+        double result = 0;
+
         System.out.println("Hur mycket väger 80 dm^3 järn?");
-        System.out.println("Svar: ");
+        result = volumeToMass(SolidTable.IRON, 80.0 / (10.0 * 10.0));
+        System.out.println(String.format("Svar: %.2fkg", result));
         System.out.println();
 
         System.out.println("Hur långt hinner Tomas om han löper med medelhastigheten 2.8 m/s i 60 minuter?");
-        System.out.println("Svar: ");
+        result = svtDistance(2.8, 60.0 * 60.0);
+        System.out.println(String.format("Svar: %.2fm", result));
         System.out.println();
 
         System.out.println("Hur mycket energi krävs för att värma upp 5 liter vatten?");
-        System.out.println("Svar: ");
+        result = heat(FluidTable.WATER, 5, 100);
+        System.out.println(String.format("Svar: %.2fJ", result));
         System.out.println();
 
         System.out.println("Hur stort är det totala trycket 100 meter under havsytan?");
-        System.out.println("Svar: ");
+        result = pressureUnderWater(100);
+        System.out.println(String.format("Svar: %.2fPa", result));
         System.out.println();
 
         System.out.println("Tomas som är 180cm lång kastar upp en boll med massan 200 gram i luften så den får starthastigheten 50 km/h. Hur högt kommer bollen?");
-        System.out.println("Svar: ");
+        //System.out.println(String.format("Svar: %.2fm", result));
+        System.out.println("Svar: TODO");
         System.out.println();
 
         System.out.println("En bil med massan 740kg accelererar från 0-100 på 4.4 sekunder. Hur stor effekt har bilens motor uppnått?");
-        System.out.println("Svar: ");
+        double energy = kineticEnergy(740, 100.0 / 4.4);
+
+        System.out.println(String.format("Svar: %.2fm", result));
         System.out.println();
 
         System.out.println("En studsboll släpps från 10 meters höjd och varje gång den nuddar marken tappar den 1% av sin energi. Hur många gånger kommer bollen studsa i marken innan den inte studsar hörge än 0.5 meter?");
-        System.out.println("Svar: ");
+        System.out.println(String.format("Svar: %.2fm", result));
         System.out.println();
 
         System.out.println("Formulera en egen uppgift man kan lösa med hjälp av dina metoder?");
-        System.out.println("Svar: ");
+        System.out.println(String.format("Svar: %.2fm", result));
         System.out.println();
 
         System.out.println("Formulera en egen uppgift man kan lösa med hjälp av dina metoder?");
-        System.out.println("Svar: ");
+        System.out.println(String.format("Svar: %.2fm", result));
         System.out.println();
 
         System.out.println("Formulera en egen uppgift man kan lösa med hjälp av dina metoder?");
-        System.out.println("Svar: ");
+        System.out.println(String.format("Svar: %.2fm", result));
         System.out.println();
     }
 }

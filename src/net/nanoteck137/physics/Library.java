@@ -10,7 +10,7 @@ public class Library {
     /**
      *  Convertes fahrenheit to celsius
      * @param fahrenheit The value to be converted to celsius
-     * @return Returnes the calculated celsius value
+     * @return Returns the calculated celsius value
      */
     public static double fahrenheitToCelsius(double fahrenheit) {
         return (fahrenheit - 32) / 1.8;
@@ -19,7 +19,7 @@ public class Library {
     /**
      * Converts kelvin to celsius
      * @param kelvin The value to be converted to celsius
-     * @return Returnes the calculated celsius value
+     * @return Returns the calculated celsius value
      */
     public static double kelvinToCelsius(double kelvin) {
         return kelvin - 273.15;
@@ -57,7 +57,7 @@ public class Library {
     /**
      * Calculate the potential energy for a object
      * @param mass The mass of the object
-     * @param height The height over the ground TODO
+     * @param height The height over the ground
      * @return Returns the potential energy for the object
      */
     public static double potentialEnergy(double mass, double height) {
@@ -134,10 +134,10 @@ public class Library {
     }
 
     /**
-     * Calculates the time taken to travel a specifed distance with a specified velocity
+     * Calculates the time taken to travel a specified distance with a specified velocity
      * @param distance The distance travled
      * @param velocity The velocity
-     * @return Returnes the time
+     * @return Returns the time
      */
     public static double svtTime(double distance, double velocity) {
         return distance / velocity;
@@ -204,7 +204,5 @@ public class Library {
     public static double velocityToHeight(double velocity) {
         return Math.pow(velocity, 2.0) / (Constants.G * 2.0);
     }
-
-
 
 }

@@ -10,12 +10,12 @@ public enum SolidTable {
     public double density;
     public double heatCapacity;
     public double meltPoint;
-    public double meltEntalpy;
+    public double meltEnthalpy;
 
     SolidTable(double d, double hc, double sp, double se) {
         density = d * 1E3;
         heatCapacity = hc * 1E3;
         meltPoint = sp;
-        meltEntalpy = se * 1E3;
+        meltEnthalpy = se * 1E3;
     }
 }

@@ -1,6 +1,8 @@
 package net.nanoteck137.physics;
 
 import net.nanoteck137.physics.tables.FluidTable;
+import net.nanoteck137.physics.tables.GasTable;
+import net.nanoteck137.physics.tables.SolidTable;
 import net.nanoteck137.physics.util.Constants;
 
 import static net.nanoteck137.physics.Library.*;
@@ -17,6 +19,9 @@ public class Program {
         System.out.println("fallSpeed(2.5) -> " + fallSpeed(2.5));
         System.out.println("delta(1, 10) -> " + delta(1, 10));
         System.out.println("delta(5, 1) -> " + delta(5, 1));
+        System.out.println("volumeToMass(FluidTable.WATER, 1) -> " + volumeToMass(FluidTable.WATER,1));
+        System.out.println("volumeToMass(GasTable.AIR, 1) -> " + volumeToMass(GasTable.AIR,1));
+        System.out.println("volumeToMass(SolidTable.IRON, 1) -> " + volumeToMass(SolidTable.IRON,1));
 
 
 

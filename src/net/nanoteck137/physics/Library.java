@@ -73,15 +73,15 @@ public class Library {
     }
 
     public static double volumeToMass(FluidTable fluid, double volume) {
-        return 0;
+        return fluid.density * volume;
     }
 
     public static double volumeToMass(GasTable gas, double volume) {
-        return 0;
+        return gas.density * volume;
     }
 
     public static double volumeToMass(SolidTable solid, double volume) {
-        return 0;
+        return solid.density * volume;
     }
 
     public static double svtVelocity(double distance, double time) {

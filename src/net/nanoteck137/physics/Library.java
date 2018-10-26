@@ -64,34 +64,81 @@ public class Library {
         return mass * Constants.G * height;
     }
 
+    /**
+     * Calculate the free fall speed
+     * @param height The height of the object
+     * @return Returns the speed
+     */
     public static double fallSpeed(double height) {
         return Math.sqrt(2 * height * Constants.G);
     }
 
+    /**
+     * Calulcate the diffrent between 2 values
+     * @param first The first value
+     * @param last The second value
+     * @return Returns the diffrents
+     */
     public static double delta(double first, double last) {
         return last - first;
     }
 
+    /**
+     * Calculate a fluids mass
+     * @param fluid The fluid
+     * @param volume The volume
+     * @return Returns the mass of the fluid
+     */
     public static double volumeToMass(FluidTable fluid, double volume) {
         return fluid.density * volume;
     }
 
+    /**
+     * Calculate gases mass
+     * @param gas The gas
+     * @param volume The volume
+     * @return Returns the mass
+     */
     public static double volumeToMass(GasTable gas, double volume) {
         return gas.density * volume;
     }
 
+    /**
+     * Calculate solids mass
+     * @param solid The solid
+     * @param volume The volume
+     * @return Returns the mass
+     */
     public static double volumeToMass(SolidTable solid, double volume) {
         return solid.density * volume;
     }
 
+    /**
+     * Calculate the velocity of an object
+     * @param distance The distance of the object
+     * @param time The time taken
+     * @return Returns the velocity
+     */
     public static double svtVelocity(double distance, double time) {
         return distance / time;
     }
 
+    /**
+     * Calculate the distance of the object
+     * @param velocity The velocity the object traveled
+     * @param time The time taken
+     * @return Returns the distance
+     */
     public static double svtDistance(double velocity, double time) {
         return velocity * time;
     }
 
+    /**
+     * Calculates the time taken to travel a specifed distance with a specified velocity
+     * @param distance The distance travled
+     * @param velocity The velocity
+     * @return Returnes the time
+     */
     public static double svtTime(double distance, double velocity) {
         return distance / velocity;
     }

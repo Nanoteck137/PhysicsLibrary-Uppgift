@@ -33,6 +33,9 @@ public class Program {
         System.out.println("svtTime(10, 2) -> " + svtTime(10, 2));
 
         System.out.println("work(50, 10) -> " + work(50,10));
+        System.out.println("power(1000, 2) -> " + power(1000,2));
+
+
 
     }
 }

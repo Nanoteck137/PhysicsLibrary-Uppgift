@@ -153,8 +153,14 @@ public class Library {
         return force * distance;
     }
 
+    /**
+     * Calulate the power
+     * @param work The work
+     * @param time The time
+     * @return Returns the power
+     */
     public static double power(double work, double time) {
-        return 0;
+        return work / time;
     }
 
     public static double heat(SolidTable solid, double mass, double deltaT) {

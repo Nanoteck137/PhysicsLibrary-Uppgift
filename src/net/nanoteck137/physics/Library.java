@@ -163,16 +163,37 @@ public class Library {
         return work / time;
     }
 
+    /**
+     * Calculate the heat generated from a solid material from a given temperature
+     * @param solid The solid
+     * @param mass The mass of the solid
+     * @param deltaT The target temperature
+     * @return Returnes the energy necessary to heat up the material to the temperature
+     */
     public static double heat(SolidTable solid, double mass, double deltaT) {
-        return 0;
+        return solid.heatCapacity * mass * deltaT;
     }
 
+    /**
+     * Calculate the heat generated from a liquid material from a given temperature
+     * @param fluid The fluid
+     * @param volume The volume of the fluid
+     * @param deltaT The target temperature
+     * @return Returns the energy necessary to heat up the material to the temperature
+     */
     public static double heat(FluidTable fluid, double volume, double deltaT) {
-        return 0;
+        return fluid.heatCapacity * volume * deltaT;
     }
 
+    /**
+     * Calculate the heat generated from a gas material from a given temperature
+     * @param gas The gas
+     * @param volume The volume of the gas
+     * @param deltaT The target temperature
+     * @return Returns the energy necessary to heat up the material to the temperature
+     */
     public static double heat(GasTable gas, double volume, double deltaT) {
-        return 0;
+        return gas.heatCapacity * volume * deltaT;
     }
 
     /**

@@ -32,8 +32,13 @@ public class Program {
         System.out.println("svtDistance(10, 5) -> " + svtDistance(10, 5));
         System.out.println("svtTime(10, 2) -> " + svtTime(10, 2));
 
-        System.out.println("work(50, 10) -> " + work(50,10));
-        System.out.println("power(1000, 2) -> " + power(1000,2));
+        System.out.println("work(50, 10) -> " + work(50, 10));
+        System.out.println("power(1000, 2) -> " + power(1000, 2));
+
+        System.out.println("heat(SolidTable.IRON, 1, 2) -> " + heat(SolidTable.IRON, 1, 2));
+        System.out.println("heat(FluidTable.WATER,1,10) -> " + heat(FluidTable.WATER, 1, 10));
+        System.out.println("heat(GasTable.AIR, 1, 1) -> " + heat(GasTable.AIR, 1, 1));
+
 
         System.out.println("velocityToHeight(9.82) -> " + velocityToHeight(9.82));
 

@@ -14,5 +14,11 @@ public class Program {
         System.out.println("pressureUnderWater(10) -> " + pressureUnderWater(10));
         System.out.println("kineticEnergy(2, 2) -> " + kineticEnergy(2, 2));
         System.out.println("potentialEnergy(2, 5) -> " + potentialEnergy(2, 5));
+        System.out.println("fallSpeed(2.5) -> " + fallSpeed(2.5));
+        System.out.println("delta(1, 10) -> " + delta(1, 10));
+        System.out.println("delta(5, 1) -> " + delta(5, 1));
+
+
+
     }
 }

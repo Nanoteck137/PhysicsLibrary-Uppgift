@@ -65,11 +65,11 @@ public class Library {
     }
 
     public static double fallSpeed(double height) {
-        return 0;
+        return Math.sqrt(2 * height * Constants.G);
     }
 
     public static double delta(double first, double last) {
-        return 0;
+        return last - first;
     }
 
     public static double volumeToMass(FluidTable fluid, double volume) {

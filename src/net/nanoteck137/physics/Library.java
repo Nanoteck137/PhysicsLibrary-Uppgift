@@ -85,15 +85,15 @@ public class Library {
     }
 
     public static double svtVelocity(double distance, double time) {
-        return 0;
+        return distance / time;
     }
 
     public static double svtDistance(double velocity, double time) {
-        return 0;
+        return velocity * time;
     }
 
     public static double svtTime(double distance, double velocity) {
-        return 0;
+        return distance / velocity;
     }
 
     public static double work(double force, double distance) {

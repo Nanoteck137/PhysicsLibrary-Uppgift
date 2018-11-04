@@ -57,54 +57,46 @@ public class Program {
         System.out.println();
     }
 
-    public static void printAssignmentQuestions() {
+    private static void printQuestion(String question, double result, String unit, boolean todo) {
+        System.out.println(question);
+        if(todo) {
+            System.out.println("\tTODO");
+        } else {
+            System.out.println(String.format("Svar: %.2f%s", result, unit));
+        }
+        System.out.println();
+    }
+
+    private static void printQuestion(String question, double result, String unit) {
+        printQuestion(question, result, unit, false);
+    }
+
+    private static void printAssignmentQuestions() {
         double result = 0;
 
-        System.out.println("Hur mycket väger 80 dm^3 järn?");
         result = volumeToMass(SolidTable.IRON, 80.0 / (10.0 * 10.0));
-        System.out.println(String.format("Svar: %.2fkg", result));
-        System.out.println();
+        printQuestion("1. Hur mycket väger 80 dm^3 järn?", result, "kg");
 
-        System.out.println("Hur långt hinner Tomas om han löper med medelhastigheten 2.8 m/s i 60 minuter?");
         result = svtDistance(2.8, 60.0 * 60.0);
-        System.out.println(String.format("Svar: %.2fm", result));
-        System.out.println();
+        printQuestion("2. Hur långt hinner Tomas om han löper med medelhastigheten 2.8 m/s i 60 minuter?", result, "m");
 
-        System.out.println("Hur mycket energi krävs för att värma upp 5 liter vatten?");
         result = heat(FluidTable.WATER, 5, 100);
-        System.out.println(String.format("Svar: %.2fJ", result));
-        System.out.println();
+        printQuestion("3. Hur mycket energi krävs för att värma upp 5 liter vatten?", result, "J");
 
-        System.out.println("Hur stort är det totala trycket 100 meter under havsytan?");
         result = pressureUnderWater(100);
-        System.out.println(String.format("Svar: %.2fPa", result));
-        System.out.println();
+        printQuestion("4. Hur stort är det totala trycket 100 meter under havsytan?", result, "Pa");
 
-        System.out.println("Tomas som är 180cm lång kastar upp en boll med massan 200 gram i luften så den får starthastigheten 50 km/h. Hur högt kommer bollen?");
-        //System.out.println(String.format("Svar: %.2fm", result));
-        System.out.println("Svar: TODO");
-        System.out.println();
+        printQuestion("5. Tomas som är 180cm lång kastar upp en boll med massan 200 gram i luften så den får starthastigheten 50 km/h. Hur högt kommer bollen?", 0, "", true);
 
-        System.out.println("En bil med massan 740kg accelererar från 0-100 på 4.4 sekunder. Hur stor effekt har bilens motor uppnått?");
-        double energy = kineticEnergy(740, 100.0 / 4.4);
+        printQuestion("6. En bil med massan 740kg accelererar från 0-100 på 4.4 sekunder. Hur stor effekt har bilens motor uppnått?", 0, "", true);
 
-        System.out.println(String.format("Svar: %.2fm", result));
-        System.out.println();
+        printQuestion("7. En studsboll släpps från 10 meters höjd och varje gång den nuddar marken tappar den 1% av sin energi. Hur många gånger kommer bollen studsa i marken innan den inte studsar hörge än 0.5 meter?", 0, "", true);
 
-        System.out.println("En studsboll släpps från 10 meters höjd och varje gång den nuddar marken tappar den 1% av sin energi. Hur många gånger kommer bollen studsa i marken innan den inte studsar hörge än 0.5 meter?");
-        System.out.println(String.format("Svar: %.2fm", result));
-        System.out.println();
+        //TODO: Create the custom methods
+        printQuestion("8. Formulera en egen uppgift man kan lösa med hjälp av dina metoder?", 0, "", true);
 
-        System.out.println("Formulera en egen uppgift man kan lösa med hjälp av dina metoder?");
-        System.out.println(String.format("Svar: %.2fm", result));
-        System.out.println();
+        printQuestion("9. Formulera en egen uppgift man kan lösa med hjälp av dina metoder?", 0, "", true);
 
-        System.out.println("Formulera en egen uppgift man kan lösa med hjälp av dina metoder?");
-        System.out.println(String.format("Svar: %.2fm", result));
-        System.out.println();
-
-        System.out.println("Formulera en egen uppgift man kan lösa med hjälp av dina metoder?");
-        System.out.println(String.format("Svar: %.2fm", result));
-        System.out.println();
+        printQuestion("10. Formulera en egen uppgift man kan lösa med hjälp av dina metoder?", 0, "", true);
     }
 }

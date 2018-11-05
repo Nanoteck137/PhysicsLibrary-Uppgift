@@ -41,7 +41,7 @@ public class Library {
      * @return The calculated pressure for water
      */
     public static double pressureUnderWater(double depth) {
-        return fluidPressure(FluidTable.WATER, depth);
+        return fluidPressure(FluidTable.H20, depth);
     }
 
     /**

@@ -3,8 +3,10 @@ package net.nanoteck137.physics.tables;
 public enum SolidTable {
 
     ICE(0.92, 2.2, 0, 334),
-    IRON(7.87, 0.45, 1538, 276)
-    //TODO: Add more solids
+    IRON(7.87, 0.45, 1538, 276),
+    COPPER(8.96, 0.39, 1085, 205),
+    TIN(7.3, 0.71, 115, 38),
+    SILVER(10.5, 0.24, 962, 105)
     ;
 
     public double density;

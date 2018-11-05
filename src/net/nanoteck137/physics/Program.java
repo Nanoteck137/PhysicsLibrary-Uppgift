@@ -105,8 +105,19 @@ public class Program {
         }
         printQuestion("6. En bil med massan 740kg accelererar från 0-100 på 4.4 sekunder. Hur stor effekt har bilens motor uppnått?", result, "W");
 
+        {
+            double y = 10.0;
+            int i = 0;
 
-        printQuestion("7. En studsboll släpps från 10 meters höjd och varje gång den nuddar marken tappar den 1% av sin energi. Hur många gånger kommer bollen studsa i marken innan den inte studsar hörge än 0.5 meter?", 0, "", true);
+            while (y > 0.5) {
+                y *= 0.99;
+                i++;
+            }
+
+            result = (double)i;
+        }
+
+        printQuestion("7. En studsboll släpps från 10 meters höjd och varje gång den nuddar marken tappar den 1% av sin energi. Hur många gånger kommer bollen studsa i marken innan den inte studsar hörge än 0.5 meter?", result, " gånger");
 
         //TODO: Create the custom methods
         printQuestion("8. Formulera en egen uppgift man kan lösa med hjälp av dina metoder?", 0, "", true);

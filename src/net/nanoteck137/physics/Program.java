@@ -7,13 +7,26 @@ import net.nanoteck137.physics.util.Constants;
 
 import static net.nanoteck137.physics.Library.*;
 
+/* TODO: List
+    - Convert to eclipse project
+    - 10 more methods
+
+ */
+
 public class Program {
 
+    /**
+     * The entry point for this program
+     * @param args The argument variables passed to the program
+     */
     public static void main(String[] args) {
         printTest();
         printAssignmentQuestions();
     }
 
+    /**
+     * Prints some test done with the Library methods
+     */
     public static void printTest() {
         System.out.println("fahrenheitToCelsius(50) -> " + fahrenheitToCelsius(50));
         System.out.println("kelvinToCelsius(0) -> " + kelvinToCelsius(0));
@@ -57,6 +70,13 @@ public class Program {
         System.out.println();
     }
 
+    /**
+     * Prints a question in a "nice" format
+     * @param question The question
+     * @param result The result
+     * @param unit The unit for result
+     * @param todo If the question is a todo
+     */
     private static void printQuestion(String question, double result, String unit, boolean todo) {
         System.out.println(question);
         if(todo) {
@@ -67,10 +87,19 @@ public class Program {
         System.out.println();
     }
 
+    /**
+     * Wrapper method for printQuestion
+     * @param question The question
+     * @param result The result
+     * @param unit The unit for the result
+     */
     private static void printQuestion(String question, double result, String unit) {
         printQuestion(question, result, unit, false);
     }
 
+    /**
+     * Prints all the questions in the assignment
+     */
     private static void printAssignmentQuestions() {
         double result = 0;
 

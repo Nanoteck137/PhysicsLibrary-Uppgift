@@ -95,8 +95,9 @@ public class Program {
             double velocity = 100 / 3.6;
             double acc = velocity / 4.4;
             double force = mass * acc;
+            double distance = svtDistance(velocity, time);
 
-            double work = work(force, svtDistance(velocity, time));
+            double work = work(force, distance);
             double power = power(work, time);
 
             result = power;

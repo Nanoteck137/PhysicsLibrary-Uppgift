@@ -10,7 +10,7 @@ import static net.nanoteck137.physics.Library.*;
 public class Program {
 
     public static void main(String[] args) {
-        //printTest();
+        printTest();
         printAssignmentQuestions();
     }
 
@@ -19,7 +19,7 @@ public class Program {
         System.out.println("kelvinToCelsius(0) -> " + kelvinToCelsius(0));
         System.out.println();
 
-        System.out.println("fluidPressure(WATER, 10) -> " + fluidPressure(FluidTable.WATER, 10));
+        System.out.println("fluidPressure(H2O, 10) -> " + fluidPressure(FluidTable.H20, 10));
         System.out.println("pressureUnderWater(10) -> " + pressureUnderWater(10));
         System.out.println();
 
@@ -34,7 +34,7 @@ public class Program {
         System.out.println("delta(5, 1) -> " + delta(5, 1));
         System.out.println();
 
-        System.out.println("volumeToMass(FluidTable.WATER, 1) -> " + volumeToMass(FluidTable.WATER,1));
+        System.out.println("volumeToMass(FluidTable.H20, 1) -> " + volumeToMass(FluidTable.H20,1));
         System.out.println("volumeToMass(GasTable.AIR, 1) -> " + volumeToMass(GasTable.AIR,1));
         System.out.println("volumeToMass(SolidTable.IRON, 1) -> " + volumeToMass(SolidTable.IRON,1));
         System.out.println();
@@ -49,7 +49,7 @@ public class Program {
         System.out.println();
 
         System.out.println("heat(SolidTable.IRON, 1, 2) -> " + heat(SolidTable.IRON, 1, 2));
-        System.out.println("heat(FluidTable.WATER,1,10) -> " + heat(FluidTable.WATER, 1, 10));
+        System.out.println("heat(FluidTable.H20,1,10) -> " + heat(FluidTable.H20, 1, 10));
         System.out.println("heat(GasTable.AIR, 1, 1) -> " + heat(GasTable.AIR, 1, 1));
         System.out.println();
 
@@ -80,7 +80,7 @@ public class Program {
         result = svtDistance(2.8, 60.0 * 60.0);
         printQuestion("2. Hur långt hinner Tomas om han löper med medelhastigheten 2.8 m/s i 60 minuter?", result, "m");
 
-        result = heat(FluidTable.WATER, 5, 100);
+        result = heat(FluidTable.H20, 5, 100);
         printQuestion("3. Hur mycket energi krävs för att värma upp 5 liter vatten?", result, "J");
 
         result = pressureUnderWater(100);

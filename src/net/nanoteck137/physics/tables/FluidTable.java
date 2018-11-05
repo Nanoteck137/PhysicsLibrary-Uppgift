@@ -3,10 +3,10 @@ package net.nanoteck137.physics.tables;
 public enum FluidTable {
 
     H20(0.998, 4.19, 0, 100, 2260),
-    WATER(0.998, 4.19, 0, 100, 2260),
-    H2SO4(1.84, 1.38, 10, 336, 511)
-
-    //TODO: Add more fluids
+    H2SO4(1.84, 1.38, 10, 336, 511),
+    CCI4(1.596, 0.84, -23, 77, 193),
+    C6H6(0.879, 1.71, 6, 80, 393),
+    C2HCI3(1.46, 0.96, -85, 87, 239)
     ;
 
     public double density;

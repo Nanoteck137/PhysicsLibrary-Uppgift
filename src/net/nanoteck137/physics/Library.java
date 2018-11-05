@@ -32,7 +32,7 @@ public class Library {
      * @return The calculated pressure value
      */
     public static double fluidPressure(FluidTable fluid, double depth) {
-        return fluid.density * Constants.G * depth;
+        return fluid.density * Constants.g_swe * depth;
     }
 
     /**
@@ -61,7 +61,7 @@ public class Library {
      * @return Returns the potential energy for the object
      */
     public static double potentialEnergy(double mass, double height) {
-        return mass * Constants.G * height;
+        return mass * Constants.g_swe * height;
     }
 
     /**
@@ -70,7 +70,7 @@ public class Library {
      * @return Returns the speed
      */
     public static double fallSpeed(double height) {
-        return Math.sqrt(2 * height * Constants.G);
+        return Math.sqrt(2 * height * Constants.g_swe);
     }
 
     /**
@@ -202,7 +202,7 @@ public class Library {
      * @return The height
      */
     public static double velocityToHeight(double velocity) {
-        return Math.pow(velocity, 2.0) / (Constants.G * 2.0);
+        return Math.pow(velocity, 2.0) / (Constants.g_swe * 2.0);
     }
 
 }

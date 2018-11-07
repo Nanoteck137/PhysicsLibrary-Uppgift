@@ -68,6 +68,13 @@ public class Program {
 
         System.out.println("velocityToHeight(9.82) -> " + velocityToHeight(9.82));
         System.out.println();
+
+        System.out.println("convertKMHToMS(90) -> " + convertKMHToMS(90));
+        System.out.println("convertMSToKMG(25) -> " + convertMSToKMH(25));
+        System.out.println("force(4, 10) -> " + force(4, 10));
+        System.out.println("gravity(100, 1000, 10000) -> " + gravity(100, 1000, 10000));
+
+        System.out.println();
     }
 
     /**

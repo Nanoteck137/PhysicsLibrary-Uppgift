@@ -1,5 +1,6 @@
 package net.nanoteck137.physics;
 
+import com.sun.xml.internal.bind.v2.runtime.reflect.opt.Const;
 import net.nanoteck137.physics.tables.FluidTable;
 import net.nanoteck137.physics.tables.GasTable;
 import net.nanoteck137.physics.tables.SolidTable;
@@ -74,7 +75,7 @@ public class Library {
     }
 
     /**
-     * Calulcate the diffrent between 2 values
+     * Calculate the difference between 2 values
      * @param first The first value
      * @param last The second value
      * @return Returns the difference
@@ -203,6 +204,47 @@ public class Library {
      */
     public static double velocityToHeight(double velocity) {
         return Math.pow(velocity, 2.0) / (Constants.g_swe * 2.0);
+    }
+
+    //NOTE: Custom methods
+
+    /**
+     * Converts km/h to m/s
+     * @param kmh km/h
+     * @return Returns m/s
+     */
+    public static double convertKMHToMS(double kmh) {
+        return kmh / 3.6;
+    }
+
+    /**
+     * Converts m/s to km/h
+     * @param ms m/s
+     * @return Returns km/s
+     */
+    public static double convertMSToKMH(double ms) {
+        return ms * 3.6;
+    }
+
+    /**
+     * Newtons second law: Calculate the force for an object
+     * @param mass The mass of the object
+     * @param acceleration The acceleration the object is traveling at
+     * @return Returns the force
+     */
+    public static double force(double mass, double acceleration) {
+        return mass * acceleration;
+    }
+
+    /**
+     * Newtons law of gravity: Calculate the gravity between two particles
+     * @param mass1 The mass of the first object
+     * @param mass2 The mass of the second object
+     * @param distance The distance between the objects
+     * @return Returns the gravitational force
+     */
+    public static double gravity(double mass1, double mass2, double distance) {
+        return Constants.G * ((mass1 * mass2) / Math.pow(distance, 2));
     }
 
 }

@@ -165,7 +165,7 @@ public class Library {
     }
 
     /**
-     * Calculate the heat generated from a solid material from a given temperature
+     * Calculate the energy necessary to heat up a solid material to a given temperature
      * @param solid The solid
      * @param mass The mass of the solid
      * @param deltaT The target temperature
@@ -176,7 +176,7 @@ public class Library {
     }
 
     /**
-     * Calculate the heat generated from a liquid material from a given temperature
+     * Calculate the energy necessary to heat up a fluid to a given temperature
      * @param fluid The fluid
      * @param volume The volume of the fluid
      * @param deltaT The target temperature
@@ -187,7 +187,7 @@ public class Library {
     }
 
     /**
-     * Calculate the heat generated from a gas material from a given temperature
+     * Calculate the energy necessary to heat up a gas to a given temperature
      * @param gas The gas
      * @param volume The volume of the gas
      * @param deltaT The target temperature

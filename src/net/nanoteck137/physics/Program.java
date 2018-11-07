@@ -77,6 +77,9 @@ public class Program {
         System.out.println("emc2(1) -> " + emc2(1));
         System.out.println("density(240, 4) -> " + density(240, 4));
         System.out.println("pressure(650, 0.5) -> " + pressure(650, 0.5));
+        System.out.println("current(5, 230) -> " + current(5, 230));
+        System.out.println("voltage(0.4, 100) -> " + voltage(0.4, 100));
+        System.out.println("resistance(5, 0.2) -> " + resistance(5, 0.2));
 
         System.out.println();
     }

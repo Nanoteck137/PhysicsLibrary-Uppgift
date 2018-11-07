@@ -276,4 +276,34 @@ public class Library {
         return force / area;
     }
 
+    /**
+     * Ohms law: Calculate the current
+     * @param voltage The voltage
+     * @param resistance The resistance
+     * @return Returns the current
+     */
+    public static double current(double voltage, double resistance) {
+        return voltage / resistance;
+    }
+
+    /**
+     * Ohms law: Calculate voltage
+     * @param current The current
+     * @param resistance The resistance
+     * @return Returns the voltage
+     */
+    public static double voltage(double current, double resistance) {
+        return current * resistance;
+    }
+
+    /**
+     * Ohms law: Calculate the resistance
+     * @param voltage The voltage
+     * @param current The current
+     * @return Returns the resistance
+     */
+    public static double resistance(double voltage, double current) {
+        return voltage / current;
+    }
+
 }

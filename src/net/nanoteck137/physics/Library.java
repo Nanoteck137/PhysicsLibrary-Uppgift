@@ -247,4 +247,33 @@ public class Library {
         return Constants.G * ((mass1 * mass2) / Math.pow(distance, 2));
     }
 
+    /**
+     * Mass–energy equivalence: Calculate the relation between an object and its mass
+     * @param mass The mass of the object
+     * @return Returns the energy
+     */
+    public static double emc2(double mass) {
+        return mass * (Math.pow(3 * Math.pow(10, 8), 2));
+    }
+
+    /**
+     * Calculate the density
+     * @param mass The mass
+     * @param volume The volume
+     * @return Returns the density
+     */
+    public static double density(double mass, double volume) {
+        return mass / volume;
+    }
+
+    /**
+     * Calculate the pressure on a area
+     * @param force The force pushing on the area
+     * @param area The area
+     * @return Returns the pressure
+     */
+    public static double pressure(double force, double area) {
+        return force / area;
+    }
+
 }

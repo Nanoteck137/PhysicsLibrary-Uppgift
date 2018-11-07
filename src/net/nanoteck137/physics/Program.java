@@ -69,10 +69,14 @@ public class Program {
         System.out.println("velocityToHeight(9.82) -> " + velocityToHeight(9.82));
         System.out.println();
 
+        System.out.println("Custom methods");
         System.out.println("convertKMHToMS(90) -> " + convertKMHToMS(90));
         System.out.println("convertMSToKMG(25) -> " + convertMSToKMH(25));
         System.out.println("force(4, 10) -> " + force(4, 10));
         System.out.println("gravity(100, 1000, 10000) -> " + gravity(100, 1000, 10000));
+        System.out.println("emc2(1) -> " + emc2(1));
+        System.out.println("density(240, 4) -> " + density(240, 4));
+        System.out.println("pressure(650, 0.5) -> " + pressure(650, 0.5));
 
         System.out.println();
     }

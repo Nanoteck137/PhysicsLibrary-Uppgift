@@ -1,6 +1,5 @@
 package net.nanoteck137.physics;
 
-import com.sun.xml.internal.bind.v2.runtime.reflect.opt.Const;
 import net.nanoteck137.physics.tables.FluidTable;
 import net.nanoteck137.physics.tables.GasTable;
 import net.nanoteck137.physics.tables.SolidTable;
@@ -253,7 +252,7 @@ public class Library {
      * @return Returns the energy
      */
     public static double emc2(double mass) {
-        return mass * (Math.pow(3 * Math.pow(10, 8), 2));
+        return mass * (Math.pow(Constants.c, 2));
     }
 
     /**

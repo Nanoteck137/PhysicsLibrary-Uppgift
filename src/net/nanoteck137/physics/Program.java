@@ -3,13 +3,11 @@ package net.nanoteck137.physics;
 import net.nanoteck137.physics.tables.FluidTable;
 import net.nanoteck137.physics.tables.GasTable;
 import net.nanoteck137.physics.tables.SolidTable;
-import net.nanoteck137.physics.util.Constants;
 
 import static net.nanoteck137.physics.Library.*;
 
 /* TODO: List
-    - Convert to eclipse project
-
+    - Convert to eclipse project?
  */
 
 public class Program {
@@ -158,7 +156,6 @@ public class Program {
 
         printQuestion("7. En studsboll släpps från 10 meters höjd och varje gång den nuddar marken tappar den 1% av sin energi. Hur många gånger kommer bollen studsa i marken innan den inte studsar hörge än 0.5 meter?", result, " gånger");
 
-        //TODO: Create the custom methods
         {
             double powerSupplyVoltage = 5;
             double ledMaxVoltage = 2.05;

@@ -9,7 +9,7 @@ import net.nanoteck137.physics.util.Constants;
 public class Library {
 
     /**
-     *  Convertes fahrenheit to celsius
+     * Convertes fahrenheit to celsius
      * @param fahrenheit The value to be converted to celsius
      * @return Returns the calculated celsius value
      */

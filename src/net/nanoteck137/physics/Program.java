@@ -9,7 +9,6 @@ import static net.nanoteck137.physics.Library.*;
 
 /* TODO: List
     - Convert to eclipse project
-    - 10 more methods
 
  */
 
@@ -139,7 +138,7 @@ public class Program {
 
             double k0 = kineticEnergy(mass, 0);
             double k1 = kineticEnergy(mass, velocity);
-            double k = delta(k1, k0);
+            double k = delta(k0, k1);
 
             result = power(k, time);
         }
@@ -160,7 +159,17 @@ public class Program {
         printQuestion("7. En studsboll släpps från 10 meters höjd och varje gång den nuddar marken tappar den 1% av sin energi. Hur många gånger kommer bollen studsa i marken innan den inte studsar hörge än 0.5 meter?", result, " gånger");
 
         //TODO: Create the custom methods
-        printQuestion("8. Formulera en egen uppgift man kan lösa med hjälp av dina metoder?", 0, "", true);
+        {
+            double powerSupplyVoltage = 5;
+            double ledMaxVoltage = 2.05;
+            double ledCurrent = 20.0 / 1000.0;
+
+            double diff = delta(ledMaxVoltage, powerSupplyVoltage);
+            result = resistance(diff, ledCurrent);
+        }
+
+
+        printQuestion("8. Om man vill att en liten LED på 20mA med 2,05V ska lysa med en 5V power supply vilken resistor borde man välja?", result, "Ω");
 
         printQuestion("9. Formulera en egen uppgift man kan lösa med hjälp av dina metoder?", 0, "", true);
 

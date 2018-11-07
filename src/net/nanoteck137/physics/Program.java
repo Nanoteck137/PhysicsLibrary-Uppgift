@@ -28,58 +28,58 @@ public class Program {
      * Prints some test done with the Library methods
      */
     public static void printTest() {
-        System.out.println("fahrenheitToCelsius(50) -> " + fahrenheitToCelsius(50));
-        System.out.println("kelvinToCelsius(0) -> " + kelvinToCelsius(0));
+        System.out.printf("fahrenheitToCelsius(50) -> %f\n", fahrenheitToCelsius(50));
+        System.out.printf("kelvinToCelsius(0) -> %f\n", kelvinToCelsius(0));
         System.out.println();
 
-        System.out.println("fluidPressure(H2O, 10) -> " + fluidPressure(FluidTable.H20, 10));
-        System.out.println("pressureUnderWater(10) -> " + pressureUnderWater(10));
+        System.out.printf("fluidPressure(H2O, 10) -> %f\n", fluidPressure(FluidTable.H20, 10));
+        System.out.printf("pressureUnderWater(10) -> %f\n", pressureUnderWater(10));
         System.out.println();
 
-        System.out.println("kineticEnergy(2, 2) -> " + kineticEnergy(2, 2));
-        System.out.println("potentialEnergy(2, 5) -> " + potentialEnergy(2, 5));
+        System.out.printf("kineticEnergy(2, 2) -> %f\n", kineticEnergy(2, 2));
+        System.out.printf("potentialEnergy(2, 5) -> %f\n", potentialEnergy(2, 5));
         System.out.println();
 
-        System.out.println("fallSpeed(2.5) -> " + fallSpeed(2.5));
+        System.out.printf("fallSpeed(2.5) -> %f\n", fallSpeed(2.5));
         System.out.println();
 
-        System.out.println("delta(1, 10) -> " + delta(1, 10));
-        System.out.println("delta(5, 1) -> " + delta(5, 1));
+        System.out.printf("delta(1, 10) -> %f\n", delta(1, 10));
+        System.out.printf("delta(5, 1) -> %f\n", delta(5, 1));
         System.out.println();
 
-        System.out.println("volumeToMass(FluidTable.H20, 1) -> " + volumeToMass(FluidTable.H20,1));
-        System.out.println("volumeToMass(GasTable.AIR, 1) -> " + volumeToMass(GasTable.AIR,1));
-        System.out.println("volumeToMass(SolidTable.IRON, 1) -> " + volumeToMass(SolidTable.IRON,1));
+        System.out.printf("volumeToMass(FluidTable.H20, 1) -> %f\n", volumeToMass(FluidTable.H20,1));
+        System.out.printf("volumeToMass(GasTable.AIR, 1) -> %f\n", volumeToMass(GasTable.AIR,1));
+        System.out.printf("volumeToMass(SolidTable.IRON, 1) -> %f\n", volumeToMass(SolidTable.IRON,1));
         System.out.println();
 
-        System.out.println("svtVelocity(10, 5) -> " + svtVelocity(10, 5));
-        System.out.println("svtDistance(10, 5) -> " + svtDistance(10, 5));
-        System.out.println("svtTime(10, 2) -> " + svtTime(10, 2));
+        System.out.printf("svtVelocity(10, 5) -> %f\n", svtVelocity(10, 5));
+        System.out.printf("svtDistance(10, 5) -> %f\n", svtDistance(10, 5));
+        System.out.printf("svtTime(10, 2) -> %f\n",  svtTime(10, 2));
         System.out.println();
 
-        System.out.println("work(50, 10) -> " + work(50, 10));
-        System.out.println("power(1000, 2) -> " + power(1000, 2));
+        System.out.printf("work(50, 10) -> %f\n", work(50, 10));
+        System.out.printf("power(1000, 2) -> %f\n", power(1000, 2));
         System.out.println();
 
-        System.out.println("heat(SolidTable.IRON, 1, 2) -> " + heat(SolidTable.IRON, 1, 2));
-        System.out.println("heat(FluidTable.H20,1,10) -> " + heat(FluidTable.H20, 1, 10));
-        System.out.println("heat(GasTable.AIR, 1, 1) -> " + heat(GasTable.AIR, 1, 1));
+        System.out.printf("heat(SolidTable.IRON, 1, 2) -> %f\n", heat(SolidTable.IRON, 1, 2));
+        System.out.printf("heat(FluidTable.H20,1,10) -> %f\n", heat(FluidTable.H20, 1, 10));
+        System.out.printf("heat(GasTable.AIR, 1, 1) -> %f\n", heat(GasTable.AIR, 1, 1));
         System.out.println();
 
-        System.out.println("velocityToHeight(9.82) -> " + velocityToHeight(9.82));
+        System.out.printf("velocityToHeight(9.82) -> %f\n", velocityToHeight(9.82));
         System.out.println();
 
         System.out.println("Custom methods");
-        System.out.println("convertKMHToMS(90) -> " + convertKMHToMS(90));
-        System.out.println("convertMSToKMG(25) -> " + convertMSToKMH(25));
-        System.out.println("force(4, 10) -> " + force(4, 10));
-        System.out.println("gravity(100, 1000, 10000) -> " + gravity(100, 1000, 10000));
-        System.out.println("emc2(1) -> " + emc2(1));
-        System.out.println("density(240, 4) -> " + density(240, 4));
-        System.out.println("pressure(650, 0.5) -> " + pressure(650, 0.5));
-        System.out.println("current(5, 230) -> " + current(5, 230));
-        System.out.println("voltage(0.4, 100) -> " + voltage(0.4, 100));
-        System.out.println("resistance(5, 0.2) -> " + resistance(5, 0.2));
+        System.out.printf("convertKMHToMS(90) -> %f\n", convertKMHToMS(90));
+        System.out.printf("convertMSToKMG(25) -> %f\n", convertMSToKMH(25));
+        System.out.printf("force(4, 10) -> %f\n", force(4, 10));
+        System.out.printf("gravity(100, 1000, 10000) -> %f\n", gravity(100, 1000, 10000));
+        System.out.printf("emc2(1) -> %f\n", emc2(1));
+        System.out.printf("density(240, 4) -> %f\n", density(240, 4));
+        System.out.printf("pressure(650, 0.5) -> %f\n", pressure(650, 0.5));
+        System.out.printf("current(5, 230) -> %f\n", current(5, 230));
+        System.out.printf("voltage(0.4, 100) -> %f\n", voltage(0.4, 100));
+        System.out.printf("resistance(5, 0.2) -> %f\n", resistance(5, 0.2));
 
         System.out.println();
     }
@@ -96,7 +96,7 @@ public class Program {
         if(todo) {
             System.out.println("\tTODO");
         } else {
-            System.out.println(String.format("Svar: %.2f%s", result, unit));
+            System.out.printf("Svar: %.2f%s", result, unit);
         }
         System.out.println();
     }
@@ -141,7 +141,7 @@ public class Program {
             double k1 = kineticEnergy(mass, velocity);
             double k = delta(k1, k0);
 
-            result = power(k, 4.4);
+            result = power(k, time);
         }
         printQuestion("6. En bil med massan 740kg accelererar från 0-100 på 4.4 sekunder. Hur stor effekt har bilens motor uppnått?", result, "W");
 

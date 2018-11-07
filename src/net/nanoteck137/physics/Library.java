@@ -169,7 +169,7 @@ public class Library {
      * @param solid The solid
      * @param mass The mass of the solid
      * @param deltaT The target temperature
-     * @return Returnes the energy necessary to heat up the material to the temperature
+     * @return Returns the energy necessary to heat up the material to the temperature
      */
     public static double heat(SolidTable solid, double mass, double deltaT) {
         return mass * solid.heatCapacity * deltaT;

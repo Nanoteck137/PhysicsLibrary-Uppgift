@@ -134,7 +134,7 @@ public class Program {
         {
             double mass = 740;
             double time = 4.4;
-            double velocity = 100 / 3.6;
+            double velocity = convertKMHToMS(100.0);
 
             double k0 = kineticEnergy(mass, 0);
             double k1 = kineticEnergy(mass, velocity);
@@ -168,11 +168,21 @@ public class Program {
             result = resistance(diff, ledCurrent);
         }
 
-
         printQuestion("8. Om man vill att en liten LED på 20mA med 2,05V ska lysa med en 5V power supply vilken resistor borde man välja?", result, "Ω");
 
-        printQuestion("9. Formulera en egen uppgift man kan lösa med hjälp av dina metoder?", 0, "", true);
+        {
+            double force = 20000;
+            double area = 4 * 4;
+            result = pressure(force, area);
+        }
 
-        printQuestion("10. Formulera en egen uppgift man kan lösa med hjälp av dina metoder?", 0, "", true);
+        printQuestion("9. Om man trycker ner med 20000N med på en 4m gånger 4m area, Hur stort är trycket?", result, "Pa");
+
+        {
+            double mass = 1562;
+            double volume = 12;
+            result = density(mass, volume);
+        }
+        printQuestion("10. Hur mycket är densiteten om massan är 1562kg och volymen är 12m^3?", result, "kg/m^3");
     }
 }

@@ -121,16 +121,13 @@ public class Program {
         {
             double mass = 740;
             double time = 4.4;
-
             double velocity = 100 / 3.6;
-            double acc = velocity / 4.4;
-            double force = mass * acc;
-            double distance = svtDistance(velocity, time);
 
-            double work = work(force, distance);
-            double power = power(work, time);
+            double k0 = kineticEnergy(mass, 0);
+            double k1 = kineticEnergy(mass, velocity);
+            double k = delta(k1, k0);
 
-            result = power;
+            result = power(k, 4.4);
         }
         printQuestion("6. En bil med massan 740kg accelererar från 0-100 på 4.4 sekunder. Hur stor effekt har bilens motor uppnått?", result, "W");
 
